@@ -13,22 +13,12 @@ namespace ControllerLib
     public class ControllerNamespaceConstraintAttribute : Attribute, IActionConstraint
     {
         public int Order => 1;
+
         /// <inheritdoc />
         public bool Accept(ActionConstraintContext context)
         {
-            return IsValidForRequest(context.RouteContext, context.CurrentCandidate.Action);
+            return ControllerNameSelector.IsValidForRequest?.Invoke(context) ?? true;
         }
-        public bool IsValidForRequest(RouteContext routeContext, ActionDescriptor action)
-        {
-            var actionNamespace = ((ControllerActionDescriptor)action).MethodInfo.DeclaringType.Namespace;
-            Console.WriteLine("IsValidForRequest:" + actionNamespace);
-            Console.WriteLine("routeContext.RouteData.DataTokens:" + routeContext.RouteData.DataTokens.Count());
-            if (routeContext.RouteData.DataTokens.ContainsKey("Namespace"))
-            {
-                var dataTokenNamespace = (string)routeContext.RouteData.DataTokens.FirstOrDefault(dt => dt.Key == "Namespace").Value;
-                return dataTokenNamespace == actionNamespace;
-            }
-            return true;
-        }
+ 
     }
 }
