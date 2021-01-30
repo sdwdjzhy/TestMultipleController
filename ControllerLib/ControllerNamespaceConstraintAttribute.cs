@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.ActionConstraints;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Routing;
 
-namespace TestMultipleController
+namespace ControllerLib
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
     public class ControllerNamespaceConstraintAttribute : Attribute, IActionConstraint

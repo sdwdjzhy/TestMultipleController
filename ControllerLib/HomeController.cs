@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using TestMultipleController;
+﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Test.Controllers
+namespace ControllerLib.Controllers
 {
     [ControllerNamespaceConstraint]
     public class HomeController : Controller
