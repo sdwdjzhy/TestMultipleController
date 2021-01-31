@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMultipleController", "TestMultipleController\TestMultipleController.csproj", "{F2605191-CFA8-4F2A-94C6-AA3ED7653C4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMultipleController", "TestMultipleController\TestMultipleController.csproj", "{F2605191-CFA8-4F2A-94C6-AA3ED7653C4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerLib", "ControllerLib\ControllerLib.csproj", "{5C409FBA-1DE7-41E4-9F67-4E49815F396B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControllerLib", "ControllerLib\ControllerLib.csproj", "{5C409FBA-1DE7-41E4-9F67-4E49815F396B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMultipleControllerWeb", "TestMultipleControllerWeb\TestMultipleControllerWeb.csproj", "{8807CA9A-33F7-4BEC-9560-461C93283EE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5C409FBA-1DE7-41E4-9F67-4E49815F396B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C409FBA-1DE7-41E4-9F67-4E49815F396B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C409FBA-1DE7-41E4-9F67-4E49815F396B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8807CA9A-33F7-4BEC-9560-461C93283EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8807CA9A-33F7-4BEC-9560-461C93283EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8807CA9A-33F7-4BEC-9560-461C93283EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8807CA9A-33F7-4BEC-9560-461C93283EE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
